@@ -1,0 +1,114 @@
+
+<center>
+  <div style="width:80%;max-width:900px;">
+	
+    <h1>Project information and figures</h1>
+    
+      <p>
+        Learn more about the samples from each project on the Psyllid Expression Network.
+       <!-- Browse detailed drawings from photographies and light microscopy images of tomato fruit development.-->
+      </p>
+      
+      <br>
+  </div>
+</center>
+
+  <div style="margin-left:25%">
+    <h3><b><i>Diaphorina citri</i></b></h3>
+    <ul class="ul_blue">
+        <li><a href=""><span class="span_black">Whole body</span></a></li>
+       
+    </ul>
+    <br>
+    Data provided by:
+<br>
+<br>
+Ramsey JS, Johnson RS, Hoki JS, Kruse A, Mahoney J, Hilf ME, et al. Metabolic Interplay between the Asian Citrus Psyllid and Its Profftella Symbiont: An Achilles' Heel of the Citrus Greening Insect Vector. Plos One. 2015;10(11).
+<br>
+<br> 
+J. S. Ramsey, J. D. Chavez, R. Johnson, S. Hosseinzadeh, J. E. Mahoney, J. P. Mohr, F. Robison, X. Zhong, D. G. Hall, M. MacCoss, J. Bruce, M. Cilia. Protein interaction networks at the host–microbe interface in Diaphorina citri, the insect vector of the citrus greening pathogen
+R. Soc. open sci. 2017 4 160545; DOI: 10.1098/rsos.160545. Published 8 February 2017  
+
+
+
+  </div>
+
+  <br>
+  <br>
+
+
+
+<style>
+	
+	#color_legend {
+		vertical-align:top;
+		width:400px;
+		margin-left:415px;
+	}
+	
+	#color_legend li {
+		display:block;
+		height:60px;
+    font-size: 20px;
+	}
+	
+	#color_legend2 {
+		vertical-align:top;
+		width:400px;
+		margin-left:415px;
+/*		top:-20px;*/
+		position:relative;
+	}
+	
+	#color_legend2 li {
+		display:block;
+		height:30px;
+	}
+	
+  .legend_sq {
+    float:left;
+    width:25px;
+    height:25px;
+    border-style:solid;
+    border-width:2px;
+    border-color:#678;
+    border-radius:5px;
+    margin-right:10px;
+  }
+	
+  p {
+/*    text-align: left;*/
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .microscopy_section {
+    margin-top:50px;
+    width:1200px;
+  }
+  
+  .microscopy_img {
+    min-width:600px;
+    max-width:1127px;
+    width:100%;
+    display:block;
+  }
+
+  ul.ul_blue li{
+    text-align: left;
+  	font-size: 24px;
+  	color:#5EA1FF;
+  }
+
+  .span_black {
+    font-size: 20px;
+    color:#000;
+  }
+
+  .span_black:hover {
+    color:#a8a8a8;
+    font-size: 20px;
+  }
+  
+</style>
+

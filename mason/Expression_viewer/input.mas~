@@ -1,0 +1,36 @@
+<%args>
+$project_html => ()
+$input_gene => ()
+</%args>
+
+<style>
+
+.input_width {
+  width: 900px;
+}
+
+</style>
+
+
+<center>
+	<& hidden_dialogs.mas, input_gene => $input_gene &>
+	<& input_title.mas &>
+	<& input_options.mas, input_gene => $input_gene &>
+</center>
+
+	<& input_filters.mas, project_html => $project_html &>
+<br/>
+
+<center>
+  <div class="input_width">
+    <button class="btn btn-primary pull-right" type="submit" form="search_gene" formaction="/expression_viewer/output" formmethod="post" formenctype="multipart/form-data">Get Expression</button>
+  </div>
+</center>
+<br/>
+<br/>
+<br/>
+
+
+<script type="text/javascript" src="/static/js/tea_expr_input.js"></script>
+<script type="text/javascript" src="/static/js/tea_expr_functions.js"></script>
+
