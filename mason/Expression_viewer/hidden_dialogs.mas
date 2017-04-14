@@ -58,11 +58,9 @@ $input_gene => ()
         <div class="form-group">
           <label for="blast_sequence">Paste a sequence or gene ID <span id="blast_i2" class="info_icon">i</span></label>
           <textarea id="blast_sequence" class="form-control" rows="12">
->ABG81958          
-mqifvktltg ktitleveps dsienvkski qdkegippdq qrlifagkql eddrtlsdyn
-iqkestlhlv lrlrggakkr kkknystpkk ikhkkkkvkl avlkfykvde ngkihrlrre
-ctseqcgagv fmaamsdrhy cgkcsytlvf nkpees
-</textarea>
+> XP_008488268
+LGEHIDPTLLAQSLTQR
+          </textarea>
         </div>
   
         <div class="row text-left">
@@ -133,6 +131,7 @@ ctseqcgagv fmaamsdrhy cgkcsytlvf nkpees
       			<input id="selectall" type='checkbox' style="margin-left: 7px;">&nbsp;Select all
       			<table id="blast_res_table" class="table table-striped table-bordered"></table>
       		</div>
+          <input id="input_type" name="input_type" style="display:none;" value="blast" >
           <input class="corr_filter" name="correlation_filter" style="display:none;"/>
           <input class="organism_filter" name="organism_filter" style="display:none;"/>
           <input class="organ_filter" name="organ_filter" style="display:none;"/>
@@ -174,18 +173,18 @@ XP_008467336
           <!-- <div class="checkbox pull-left">
             <label class="text-muted"><input type="checkbox" name="hotspot" disabled> Show cumulative expression</label>
           </div> -->
-        
-      		<input class="corr_filter" name="correlation_filter" style="display:none;"/>
-      		<input class="organism_filter" name="organism_filter" style="display:none;"/>
-      		<input class="organ_filter" name="organ_filter" style="display:none;"/>
-      		<input class="stage_filter" name="stage_filter" style="display:none;"/>
-      		<input class="tissue_filter" name="tissue_filter" style="display:none;"/>
-          
+          <input id="input_type" name="input_type" style="display:none;" value="custom_list" >
+          <input class="corr_filter" name="correlation_filter" style="display:none;"/>
+          <input class="organism_filter" name="organism_filter" style="display:none;"/>
+          <input class="organ_filter" name="organ_filter" style="display:none;"/>
+          <input class="stage_filter" name="stage_filter" style="display:none;"/>
+          <input class="tissue_filter" name="tissue_filter" style="display:none;"/>
+
           <br>
-      		<button id="custom_list_button" class="btn btn-primary pull-right" type="submit" form="custom_list_form" formaction="/expression_viewer/output" formmethod="post" formenctype="multipart/form-data">Get Expression</button>
-      		<br>
-      		<br>
-      	</form>
+          <button id="custom_list_button" class="btn btn-primary pull-right" type="submit" form="custom_list_form" formaction="/expression_viewer/output" formmethod="post" formenctype="multipart/form-data">Get Expression</button>
+          <br>
+          <br>
+        </form>
 
       </div>
     </div>
