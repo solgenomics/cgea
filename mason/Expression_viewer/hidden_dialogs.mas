@@ -58,7 +58,7 @@ $input_gene => ()
         <div class="form-group">
           <label for="blast_sequence">Paste a sequence or gene ID <span id="blast_i2" class="info_icon">i</span></label>
           <textarea id="blast_sequence" class="form-control" rows="12">
-> XP_008488268
+> DcitrP075700
 LGEHIDPTLLAQSLTQR  
 	</textarea>
         </div>
@@ -169,8 +169,8 @@ LGEHIDPTLLAQSLTQR
         	<label for="custom_list">Paste a list of gene IDs</label>
 
 <textarea id="custom_list" class="form-control" rows="10" name="input_gene" style="margin-top: 5px;">
-ABG81958
-XP_008467336
+DcitrP075700
+DcitrP000065
 </textarea>
           
           <!-- <div class="checkbox pull-left">
