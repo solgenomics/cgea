@@ -60,7 +60,7 @@ $delete_enabled => ()
   <div class="row">
     
     <div class="col-sm-4 col-md-4 col-lg-4">
-      <div style="text-align: center; width:100%">Developmental Stages</div>
+      <div style="text-align: center; width:100%">Host/Treatment</div>
 
       <select multiple id="stage_col" class="form-control wizard_select" size="10"></select>
       <button class="select_all btn btn-default">Select All</button>
@@ -76,8 +76,7 @@ $delete_enabled => ()
     </div>
       
     <div class="col-sm-4 col-md-4 col-lg-4">
-	  <div style="text-align: center; width=100%">Host/Treatment</div>
-<!--      <div style="text-align: center; width=100%">Tissues/Cell types</div>-->
+	  <div style="text-align: center; width=100%">Developmental Stages</div>
 
       <select multiple id="tissue_col" class="form-control wizard_select" size="10"></select>
       <button class="select_all btn btn-default">Select All</button>
