@@ -1,0 +1,40 @@
+<%args>
+$project_html => ()
+$species_html => ()
+$delete_enabled => ()
+$input_gene => ()
+</%args>
+
+<style>
+
+.input_width {
+  width: 900px;
+}
+
+</style>
+
+<center>
+	<& hidden_dialogs.mas, input_gene => $input_gene &>
+	<& input_title.mas &>
+	<& input_options.mas, input_gene => $input_gene &>
+</center>
+
+	<& input_filters.mas, project_html => $project_html, species_html=>$species_html , delete_enabled => $delete_enabled &>
+<br/>
+
+<center>
+  <div class="input_width">
+    <button id="get_expression_btn" class="btn btn-primary pull-right" type="submit" form="search_gene" formaction="/expression_viewer/output" formmethod="post" formenctype="multipart/form-data">Get Expression</button>
+  </div>
+</center>
+<br/>
+<br/>
+<br/>
+
+<script>
+  var conf_input_gene = "<% $input_gene %>";
+  //alert("conf_input_gene: "+conf_input_gene);
+</script>
+
+<script type="text/javascript" src="/static/js/tea_expr_input.js"></script>
+<script type="text/javascript" src="/static/js/tea_expr_functions.js"></script>
