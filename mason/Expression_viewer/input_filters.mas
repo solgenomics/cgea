@@ -22,15 +22,15 @@ $delete_enabled => ()
           }
         </%perl>
         <div class="form-group">
-             <label for="sel1">Select species</label>
-             <select class="form-control" id="sel1" style="font-style:italic">
+             <label for="sel1">Genus</label>
+             <select class="form-control" id="sel1">
                   <% $species_html %>
              </select>
         </div>
         <a href="/project_menu" target="blank" class="pull-right">more info</a>
-        <center>
+        <label for="sel1">
           Projects
-        </center>
+        </label>
       </div>
       
       <div id="expr_params" class="panel panel-primary" style="overflow: scroll; min-height: 145px">
@@ -64,24 +64,24 @@ $delete_enabled => ()
   <br/>
   <div class="row">
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
-      <div style="text-align: center; width:100%">Host/Treatment</div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <div style="text-align: center; width:100%" id="host_lbl">Host/Treatment</div>
 
       <select multiple id="stage_col" class="form-control wizard_select" size="10"></select>
       <button class="select_all btn btn-default">Select All</button>
       <button class="select_none btn btn-default pull-right">Unselect</button>
     </div>
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
+<!--     <div class="col-sm-4 col-md-4 col-lg-4">
       <div style="text-align: center; width=100%">Organs</div>
       
       <select multiple id="organ_part_col" class="form-control wizard_select" size="10"></select>
       <button class="select_all btn btn-default">Select All</button>
       <button class="select_none btn btn-default pull-right">Unselect</button>
-    </div>
+    </div> -->
       
-    <div class="col-sm-4 col-md-4 col-lg-4">
-	  <div style="text-align: center; width=100%">Developmental Stages</div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+	  <div style="text-align: center; width=100%">Tissues</div>
 
       <select multiple id="tissue_col" class="form-control wizard_select" size="10"></select>
       <button class="select_all btn btn-default">Select All</button>
@@ -157,7 +157,14 @@ $delete_enabled => ()
     });
   });
   
-  
+    $('#sel1').on('change', function() {
+      if(this.value == '1'){ 
+        $("#host_lbl").html("Host/Treatments");
+      } else {
+        $("#host_lbl").html("Accessions/Treatments");
+      }
+    });
+
   // $(document).ready(function() {
   //
   //     var cookie = $.cookie('sgn_session_id');
