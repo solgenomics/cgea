@@ -1,2 +1,2 @@
-Repo for code behind Psyllid Expression Network
-https://pen.sgn.cornell.edu
+Repo for code behind Citrus Greening Expression Network for Citrus and Psyllid
+https://cgen.citrusgreening.org
