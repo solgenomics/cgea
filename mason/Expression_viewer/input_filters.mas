@@ -27,7 +27,7 @@ $delete_enabled => ()
                   <% $species_html %>
              </select>
         </div>
-        <a href="/project_menu" target="blank" class="pull-right">more info</a>
+        <a href="/anatomy_viewer/microscopy" target="blank" class="pull-right">more info</a>
         <label for="sel1">
           Projects
         </label>
